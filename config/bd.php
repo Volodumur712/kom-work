@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-         $database = "";
-         $username = "";
-         $password = "";
+$servername = "sql11.freemysqlhosting.net";
+    $database = "sql11591844";
+    $usernamy = "sql11591844";
+    $password = "rPP8UYAFSx"; 
     // створення зєднання
     $conn = mysqli_connect($servername, $username, $password, $database);
     
