@@ -1,4 +1,3 @@
-
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/partials/pages/head_menu.php');
 ?>
