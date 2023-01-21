@@ -1,0 +1,17 @@
+body {
+    background: rgb(218, 180, 180);
+}
+.header {
+    background: rgb(146, 240, 154);
+}
+
+.menu-main {
+    list-style: none;
+}
+.menu-main li {
+    display: inline-block;
+}
+
+.home {
+    background: fuchsia;
+}
