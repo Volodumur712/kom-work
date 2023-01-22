@@ -9,12 +9,6 @@
 // 		$categoryResult = $conn->query($categorySQL);
 // 		$category = $categoryResult->fetch_assoc();
 
-/* 
-1, зробити посилання на лайк (окрема сторінка, на неї з допом аякс)
-2, зробити перевірку чи є запис в бд з даним постом і корист
-якщо є то видаляти лайк
-інакше додавати запис і додавати що запис створено
-*/
 ?>
 <section class="projects">
     <div class="row">
@@ -25,6 +19,20 @@
             <a href="/partials/pages/add-project.php"><h3>ADD Projects</h3>
         </div>
     </div>
+
+	<!-- твіти у цикл у вигляді списку -->
+	<ul id="listTwits">
+		<?php while($row = $twits->fetch_assoc()): ?>
+			<li>
+				<?php echo $row['twit']; ?> 
+				<!-- перевірка чи є картинка -->
+				<?php if($row['image'] != ""); ?>
+					<img src="/uploads/<?php echo $row['image']; ?>">
+			</li>
+		<?php endwhile; ?>    
+	</ul>
+
+
 <div class="col-md-4">
     <div class="blog-entry ftco-animate">
 		<a href="#" class="img img-2" style="background-image: url(<?php //echo $row['preview']; ?>);"></a>

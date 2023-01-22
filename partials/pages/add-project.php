@@ -1,11 +1,14 @@
+<?php
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/header.php');
+?>
 
 <?php
-// тут створення нових дописів за цим прикладом
     if(!empty($_POST)) {
-        $sql = "INSERT INTO `projects` (`twit`, `user_id`, `created`) 
-        VALUES ('" . $_POST['twit'] . "', '" . $_POST['user_id'] . "', current_timestamp());";
+        // INSERT INTO `projects` (`id`, `proj_name`, `image`, `discription`, `autor`, `scills`) 
+        // VALUES (NULL, 'war', 'image11.pnj', 'game for war', 'vova', '2');
+        $sql = "INSERT INTO `projects` (`proj_name`, `discription`, `autor`, `scills`) 
+        VALUES ('" . $_POST['project'] . "', '" . $_POST['twit'] . "', '" . $_POST['autor'] . "', '" . $_POST['scills'] . "');";
         //var_dump($sql);
-        // INSERT INTO `projects` (`id`, `image`, `autor`, `scills`) VALUES (NULL, 'img1', 'vova', '1');
         if (mysqli_query($conn, $sql)) {
             echo "Новий проект додано. <a href='/partials/pages/projects.php'>До проектів</a>";
         } else {
@@ -16,19 +19,19 @@
 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Додати проект</h6>
+        <h1 class="m-0 font-weight-bold text-primary">Додати проект</h1>
+        <a href='/partials/pages/projects.php'>До проектів</a>
     </div>
     
     <div class="card-body">
-        <form action="?page=addpost" method="POST">
+        <form action="#" method="POST" id="formTwit">
             <div class="form-group">
-                <label for="twit">twit</label>
-                <input type="text" name="twit" class="form-control" id="twit" placeholder="Enter your twit">
-            </div>
-
-            <div class="form-group">
-                <label for="twit">ID:</label>
-                <input type="text" name="user_id" class="form-control" id="twit" placeholder="Enter id">
+                <label for="twit"><h2>Project</h2></label>
+                <input type="text" name="project" class="form-control" id="twit" placeholder="Type your project name">
+                <input type="text" name="autor" class="form-control" id="twit" placeholder="Select autor">
+                <textarea class="form-control" name="twit" id="twit" rows="3"placeholder="Type your project discription"></textarea>
+                <input id="projImage" type="file" name="image">
+                <input type="text" name="scills" class="form-control" id="twit" placeholder="Select scills">
             </div>
 
             <button type="submit" class="btn btn-success btn-lg">Save</button>
@@ -36,15 +39,6 @@
     </div>   
 </div>        
 
-
-<div class="container">
-    <div id="ajaxStatus"></div>
-    <form class="form-group" enctype="multipart/form-data" action="#" method="post" id="formTwit">
-        <input type="hidden" name="user_id" value="<?php echo getUserID(); ?>">
-        <label for="twit">Ваші дописи</label>    
-        <textarea class="form-control" name="twit" id="twit" rows="3"></textarea>
-        <input id="twitImage" type="file" name="image">
-
-        <button class="btn btn-success">Відправити</button>
-    </form>
-</div>
+<?php
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/scrypts.php');
+?>
