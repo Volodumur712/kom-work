@@ -1,5 +1,5 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php'); 
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/header.php');
 ?>
 
 <?php
@@ -19,7 +19,8 @@ require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php');
 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Додати</h6>
+        <h1 class="m-0 font-weight-bold text-primary">Додати</h1>
+        <a href='/?p=scills.php'>Назад</a>
     </div>
     
     <div class="card-body">
@@ -33,3 +34,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php');
         </form>
     </div>   
 </div>
+
+<?php
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/scrypts.php');
+?>
