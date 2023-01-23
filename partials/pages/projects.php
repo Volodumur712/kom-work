@@ -10,6 +10,7 @@
 // 		$category = $categoryResult->fetch_assoc();
 
 ?>
+
 <section class="projects">
     <div class="row">
         <div class="col-md-4">
