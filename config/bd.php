@@ -1,8 +1,8 @@
 <?php
- $servername = "sql11.freemysqlhosting.net";
-     $database = "sql11591844";
-     $username = "sql11591844";
-     $password = "rPP8UYAFSx"; 
+ $servername = "localhost";
+     $database = "122";
+     $username = "root";
+     $password = "";
 
     // $servername = "localhost";
     // $database = "sql11591844";
