@@ -9,7 +9,9 @@
 
       <script src="js/jquery3.6.1.min.js"></script>
 
-      <script src="js/main.js"></script>      
+      <script src="js/main.js"></script>  
+
+      <script src="js/typed.min.js"></script>    
 
 </body>
 
