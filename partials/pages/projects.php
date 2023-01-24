@@ -20,12 +20,17 @@
             <a href="/partials/pages/add-project.php"><h3>ADD Projects</h3>
         </div>
     </div>
+	<div class="col-md-4">
+            <a href="/partials/pages/add-foto.php"><h3>ADD foto</h3>
+			<a href="/partials/pages/show-foto.php"><h3>show foto</h3>
+			<a href="/partials/pages/test.php"><h3>test</h3>
+    </div>
 
 	<!-- твіти у цикл у вигляді списку -->
 	<ul id="listTwits">
 		<?php while($row = $twits->fetch_assoc()): ?>
 			<li>
-				<?php echo $row['twit']; ?> 
+				<?php echo $row['proj_name']; ?> 
 				<!-- перевірка чи є картинка -->
 				<?php if($row['image'] != ""); ?>
 					<img src="/uploads/<?php echo $row['image']; ?>">
