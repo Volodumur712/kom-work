@@ -17,13 +17,13 @@ body {
 
 /*KATYA==============================================*/
 html {
-    overflow-x: hidden; /*убираем прокрутку*/
+    /*overflow-x: hidden; убираем прокрутку*/
     overflow-y: hidden;
 }
 body {
     margin: 0;
     background: #ffffff;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: "Open Sans",sans-serif;
  
 }

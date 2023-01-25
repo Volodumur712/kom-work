@@ -18,8 +18,15 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/header.php');
         while($row = $result->fetch_assoc()) 
         {
         ?>
-            <div class="col-md-4"><?php echo $row['my_scill']; ?></div>    
+            <div class="col-md-4" id="home-bg">
+                <div class="skill mb-4 font-weight-bold border 3px border-success p-5">
+                    <div class="d-flex justify-content-between text-primary">
+                        <?php echo $row['my_scill']; ?>
+                    </div>
+                </div>
+            </div>    
         <?php
         }
         ?>
+
 </section>
