@@ -1,14 +1,8 @@
 <?php
-// $servername = "sql207.epizy.com";
-//      $database = "epiz_33448594_123";
-//      $username = "epiz_33448594";
-//      $password = "Pcgoy8OclCguS";
-
-    // нова
-    // $servername = "sql207.epizy.com";
-    //  $database = "epiz_33448594_123";
-    //  $username = "epiz_33448594";
-    //  $password = "Pcgoy8OclCguS";
+  // $servername = "sql207.epizy.com";
+  //     $database = "epiz_33448594_123";
+  //     $username = "epiz_33448594";
+  //     $password = "Pcgoy8OclCguS"; 
 
      // заблокована
     //  $servername = "sql11.freemysqlhosting.net";
