@@ -17,10 +17,10 @@
     //  $password = "rPP8UYAFSx"; 
 
     // загальна
-      // $servername = "localhost";
-      // $database = "122";
-      // $username = "root";
-      // $password = ""; 
+      $servername = "localhost";
+      $database = "122";
+      $username = "root";
+      $password = ""; 
     
     // створення зєднання
     $conn = mysqli_connect($servername, $username, $password, $database);
