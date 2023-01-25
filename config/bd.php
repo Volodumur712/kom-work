@@ -1,8 +1,14 @@
 <?php
- $servername = "localhost";
-     $database = "122";
-     $username = "root";
-     $password = "";
+// $servername = "sql207.epizy.com";
+//      $database = "epiz_33448594_123";
+//      $username = "epiz_33448594";
+//      $password = "Pcgoy8OclCguS";
+
+    // нова
+    // $servername = "sql207.epizy.com";
+    //  $database = "epiz_33448594_123";
+    //  $username = "epiz_33448594";
+    //  $password = "Pcgoy8OclCguS";
 
     // $servername = "localhost";
     // $database = "sql11591844";

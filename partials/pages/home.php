@@ -1,5 +1,5 @@
 <section class="home">
-  
+
     <div class="home" id="home-bg">
         <div class="container">
             <div class="home-person">

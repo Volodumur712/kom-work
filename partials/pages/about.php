@@ -1,6 +1,7 @@
  
 
 <section class="about">
+
  
 <div class="about" id="about-bg">
 
@@ -43,6 +44,5 @@
     </div>
     
 </div>
-
 
 </section>

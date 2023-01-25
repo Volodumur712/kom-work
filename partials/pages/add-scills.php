@@ -17,22 +17,24 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/header.php');
     }
 ?>
 
-<div class="card shadow mb-4">
-    <div class="card-header py-3">
-        <h1 class="m-0 font-weight-bold text-primary">Додати</h1>
-        <a href='/?p=scills.php'>Назад</a>
-    </div>
-    
-    <div class="card-body">
-        <form action="?page=addpost" method="POST">
-            <div class="form-group">
-                <label for="twit">scill</label>
-                <input type="text" name="scill" class="form-control" id="scill" placeholder="Enter new scill">
-            </div>
+<div class="p-3" id="home-bg">
+    <div class="card shadow mb-4" id="home-bg">
+        <div class="card-header py-3">
+            <h1 class="m-0 font-weight-bold text-success">Додати</h1>
+            <a href='/?p=scills.php'>Назад</a>
+        </div>
+        
+        <div class="card-body">
+            <form action="?page=addpost" method="POST" id="home-bg">
+                <div class="form-group">
+                    <label for="twit">scill</label>
+                    <input type="text" name="scill" class="form-control m-5" id="scill" placeholder="Enter new scill">
+                </div>
 
-            <button type="submit" class="btn btn-success btn-lg">ADD</button>
-        </form>
-    </div>   
+                <button type="submit" class="btn btn-success btn-lg">ADD</button>
+            </form>
+        </div>   
+    </div>
 </div>
 
 <?php
