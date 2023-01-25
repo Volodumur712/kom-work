@@ -17,14 +17,11 @@
                     </div>
                 </div>
                 
-
                 <div class="person-foto">
                     <img src="./assets/image/profile.png">
                 </div>
             </div>
         </div>
-
-            
     </div>
 
 </section>

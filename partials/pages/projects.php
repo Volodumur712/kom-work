@@ -1,16 +1,4 @@
 
-<?php
-// тут буде вибирати картинки з бази проектів і показувати користувачам
-
-// $sql = "SELECT * FROM posts";
-// if($result = $conn->query($sql)): // вибірка з масиву
-// 	foreach($result as $row):  
-// 		$categorySQL = "SELECT * FROM categorys WHERE id=" . $row['category_id'];
-// 		$categoryResult = $conn->query($categorySQL);
-// 		$category = $categoryResult->fetch_assoc();
-
-?>
-
 <section class="projects">
 	<div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
 		<div class="col-lg-6">
@@ -86,5 +74,5 @@
                     </div>
                 </div>
             </div>
-
+<p>end</p>
 </section>
