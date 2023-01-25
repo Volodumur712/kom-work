@@ -12,6 +12,7 @@
 				<li <?php if(!isset($_GET['p']) || $_GET['p'] == 'about'): ?> <?php endif; ?> ><a href="/?p=about.php">About</a></li>
 				<li <?php if(!isset($_GET['p']) || $_GET['p'] == 'contact'): ?> <?php endif; ?> ><a href="/?p=contact.php">Contact</a></li>
 				<li><a href="">Login</a></li>
+				<li><a href="/register.php/">Register</a></li>
 			</ul>
 		</div>
     </div>
