@@ -1,4 +1,5 @@
 <section class="home">
+
     <div class="home" id="home-bg">
         <div class="container">
             <div class="home-person">
@@ -16,14 +17,10 @@
                     </div>
                 </div>
                 
-
                 <div class="person-foto">
                     <img src="./assets/image/profile.png">
                 </div>
             </div>
         </div>
-
-            
     </div>
-
 </section>
