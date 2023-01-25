@@ -19,7 +19,7 @@
                         </div>
                         <h3>of working experience as a web designer &amp; developer</h3>
                     </div>
-                    <p>Я, и моя молодая команда делаем что-то very важное</p>
+                    <p>Я и моя молодая команда делаем что-то very важное</p>
                     <p><i>* Afordable Prices</i></p>
                     <p><i>* High Quality Product</i></p>
                     <p><i>* On Time Project Delivery</i></p>

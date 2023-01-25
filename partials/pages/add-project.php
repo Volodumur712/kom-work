@@ -4,6 +4,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/upload/upload.php');
 ?>
 
 <?php
+    // так працює
     if(!empty($_POST)) {
         $sql = "INSERT INTO `projects` (`proj_name`, `discription`, `autor`, `scills`) 
         VALUES ('" . $_POST['project'] . "', '" . $_POST['twit'] . "', '" . $_POST['autor'] . "', '" . $_POST['scills'] . "');";
@@ -13,7 +14,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/upload/upload.php');
         } else {
             echo "Error: " . $sql . "<br>" . mysql_error($conn); 
         }
-    }
+    } // так працює
 ?>
 
 <div class="card shadow mb-4">
@@ -29,17 +30,17 @@ require($_SERVER['DOCUMENT_ROOT'] . '/upload/upload.php');
                 <input type="text" name="project" class="form-control" id="twit" placeholder="Type your project name">
                 <input type="text" name="autor" class="form-control" id="twit" placeholder="Select autor">
                 <textarea class="form-control" name="twit" id="twit" rows="3"placeholder="Type your project discription"></textarea>
-                <div class="wrapper">
-        <?php if(!empty($statusMsg)) { ?>
-            <p class="status <?php echo $status; ?>"> <?php $statusMsg; ?> </p>
-        <?php } ?>
+                <!-- <div class="wrapper">
+        <?php //if(!empty($statusMsg)) { ?>
+            <p class="status <?php //echo $status; ?>"> <?php //$statusMsg; ?> </p>
+        <?php //} ?>
                 
                     <div class="form-group">
                         <label for="image">Select Image File:</label>
                         <input type="file" name="image" class="form-control">
                     </div>
                 
-                </div>
+                </div> -->
                 <input type="text" name="scills" class="form-control" id="twit" placeholder="Select scills">
             </div>
                 <button type="submit" name="submit" class="btn btn-success btn-lg">Save</button>
