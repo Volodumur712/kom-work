@@ -1,3 +1,13 @@
+<?php
+require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php'); 
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
+
+  $sql = "SELECT * FROM developers";
+  $result = $conn->query($sql);
+  $row = $result->fetch_assoc();
+?>
+
+
 <section class="home">
 
     <div class="home" id="home-bg">
@@ -5,7 +15,7 @@
             <div class="home-person">
                 <div class="person-text">
                     <h3>I'm</h3>
-                    <h1>Virtual Person</h1>
+                    <h1><?php echo $row['d_name']; ?></h1>
                     <h2 class="typed-text-output d-inline">Web Developer</h2><span class="typed-cursor d-none typed-cursor--blink">|</span>
                     <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
                     <div class="knopki-play">

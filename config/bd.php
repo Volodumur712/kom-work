@@ -10,10 +10,10 @@
     //  $username = "epiz_33448594";
     //  $password = "Pcgoy8OclCguS";
 
-    // $servername = "localhost";
-    // $database = "sql11591844";
-    // $username = "root";
-    // $password = ""; 
+     $servername = "localhost";
+     $database = "122";
+     $username = "root";
+     $password = ""; 
     
     // створення зєднання
     $conn = mysqli_connect($servername, $username, $password, $database);

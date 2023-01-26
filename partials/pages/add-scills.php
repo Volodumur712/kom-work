@@ -11,6 +11,8 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/header.php');
         
         if (mysqli_query($conn, $sql)) {
             echo "Новий scill додано. <a href='/?p=scills.php'>Назад</a>";
+            // redirect
+          header("Location: /?p=scills.php");
         } else {
             echo "Error: " . $sql . "<br>" . mysql_error($conn); 
         }
@@ -28,7 +30,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/header.php');
             <form action="?page=addpost" method="POST" id="home-bg">
                 <div class="form-group">
                     <label for="twit">scill</label>
-                    <input type="text" name="scill" class="form-control m-5" id="scill" placeholder="Enter new scill">
+                    <input type="text" name="scill" class="form-control m-3" id="scill" placeholder="Enter new scill">
                 </div>
 
                 <button type="submit" class="btn btn-success btn-lg">ADD</button>

@@ -11,6 +11,8 @@ require($_SERVER['DOCUMENT_ROOT'] . '/upload/upload.php');
         var_dump($sql);
         if (mysqli_query($conn, $sql)) {
             echo "Новий проект додано.";
+            // redirect
+          header("Location: /");
         } else {
             echo "Error: " . $sql . "<br>" . mysql_error($conn); 
         }

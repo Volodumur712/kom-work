@@ -1,8 +1,10 @@
- 
+<?php
+require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php'); 
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
+?> 
 
 <section class="about">
 
- 
 <div class="about" id="about-bg">
 
     <div class="container">
