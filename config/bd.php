@@ -10,7 +10,9 @@
     //  $username = "epiz_33448594";
     //  $password = "Pcgoy8OclCguS";
 
-    $servername = "localhost";
+
+     $servername = "localhost";
+
      $database = "122";
      $username = "root";
      $password = ""; 

@@ -31,6 +31,7 @@ body {
      
 }
 
+
 .menu-main li a {
     text-decoration: none;
     color: #6244C5;
@@ -47,8 +48,6 @@ body {
 
 /*MENU (KATYA) END++++++++*/
  
-
-
 /*KATYA ==============================================*/
 html {
     /*overflow-x: hidden; убираем прокрутку*/
@@ -259,7 +258,7 @@ color: #12141D;
 /*KATYA CONTACTS START===*/
 
 .contact {
-    margin-top: -20px;
+    margin-top: 20px;
     width: 100%;
 
 }
@@ -390,20 +389,24 @@ color: #12141D;
 
 
  /*KATYA ABOUT START===*/
+
  .about {
     margin-top: -20px;
     width: 100%;
  }
+
  #about-bg {
     
     height: 100%;
     background: url(../image/bg-about.png) right top no-repeat;
 }
 .about-top  h1 {
+
     font-size: 26px;
     font-weight: 700;
     margin-top: 80px;
     margin-bottom: 10px;
+
 
 }
 .about-top {
@@ -460,7 +463,6 @@ color: #12141D;
 
 }
 
-
 .about-us p {
      
     font-size: 1.5rem;
@@ -478,6 +480,7 @@ color: #12141D;
 .about-years button {
     margin-top: 25px;
 }
+
 .btn-read {
     font-weight: 500;
     transition: .5s;
@@ -511,7 +514,6 @@ color: #12141D;
     font-size: 2.1rem;
     border-right: 1px solid #dee2e6;
     padding-right: 1rem;
-    
     margin-right: 1rem;
 
 }
@@ -540,6 +542,7 @@ color: #12141D;
      border-radius: 10px;
 }
  /*KATYA ABOUT END===*/
+
 /*SKILLS VOVA++++*/
 
 .scills .row {

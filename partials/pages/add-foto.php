@@ -1,5 +1,6 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/partials/header.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php'); 
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
 
 require($_SERVER['DOCUMENT_ROOT'] . '/upload/upload.php');
 ?>

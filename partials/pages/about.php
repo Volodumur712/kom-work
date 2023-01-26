@@ -1,8 +1,10 @@
- 
 
+<?php
+require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php'); 
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
+?> 
 <section class="about">
 
- 
 <div class="about" id="about-bg">
 
     <div class="container">
@@ -18,6 +20,7 @@
                             <h1>15</h1>
                             <h5>Years</h5>
                         </div>
+
                         <h3>of working experience as a 
                         </br>web designer &amp; developer</h3>
                     </div>
@@ -27,10 +30,12 @@
                     <p><i>* On Time Project Delivery</i></p>
                     <p><i>* Support 24/7</i></p>
                     <p><i>* Love &amp; Peace</i></p>
+
                     <a href="#" class="btn-read">Read More</a>
 
             </div>
                             
+
             <div class="about-foto-colonca">
                     <div class="about-foto">
                         <div class="nashi-foto">
@@ -51,6 +56,7 @@
                     </div>
                     
                     <p>And also thanks to some experience in marketing and sales, I am confident I would be able to aid you in web development-related projects. In addition to my knowledge base, I actively seek out new technologies and stay up to date on industry trends and advancements.</p>
+
 
 
             </div>

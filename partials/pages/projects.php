@@ -1,3 +1,7 @@
+<?php
+require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php'); 
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
+?>
 
 <section class="projects" id="home-bg">
 	<div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
