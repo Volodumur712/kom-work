@@ -1,3 +1,4 @@
+
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php'); 
 require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
@@ -8,6 +9,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
     <div class="contact" id="contact-bg">
 
         <div class="container">
+
             <div class="contact-top">
                 <div class="row">
                 <form method = "post">
@@ -72,6 +74,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
                     <form method="post" action="mailto:alex@itbanda.pro">
                         <h2 class="display-5">Where did we learn this?</h2>
                         <h3>Fill out the form, you will be contacted</h3>
+
                         <div class="feedback-form">
                             <div class="feedback-short">
                                     <input type="text" class="form-contr" id="name" placeholder="Your Name">
@@ -83,6 +86,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
                                     <input type="text" class="form-contr" id="subject" placeholder="Subject">
                             </div>
                             <div class="feedback-long">
+
                                      <textarea class="form-contr" placeholder="Leave a message here" id="message" style="height: 50px"></textarea>                                    
                             </div>
                             <div class="feedback-long">
@@ -94,6 +98,4 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
                 </div>
         </div>
     </div>
-    
-
 </section>
