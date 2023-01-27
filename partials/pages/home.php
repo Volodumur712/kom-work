@@ -2,9 +2,9 @@
 require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php'); 
 require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
 
-  $sql = "SELECT * FROM developers";
-  $result = $conn->query($sql);
-  $row = $result->fetch_assoc();
+  // $sql = "SELECT * FROM developers";
+  // $result = $conn->query($sql);
+  // $row = $result->fetch_assoc();
 ?>
 
 
@@ -14,9 +14,27 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
         <div class="container">
             <div class="home-person">
                 <div class="person-text">
-                    <h3>I'm</h3>
+                  <div class="">
+                    <?php
+                    if(isset($_SESSION['user_id']) && $_SESSION['user_id'] != null) {
 
-                    <h1><?php echo $row['d_name']; ?></h1>
+                        $sql = 'SELECT * FROM userku WHERE id=' . $_SESSION["user_id"];
+                        //var_dump($sql);
+                        $result = mysqli_query($conn, $sql);
+                        $user = $result->fetch_assoc();
+                    ?>
+                        <h1> Hi, <?php echo $user['u_name']; ?> ! </h1>
+                        <?php
+                        } else {
+                            ?>
+                            
+                            <?php
+                        }   
+                        ?> 
+                  </div>
+                    <h3>I'm</h3>
+                    <h1>Virtual person</h1>
+                    <!-- <h1><?php //echo $row['d_name']; ?></h1> -->
 
                     <h2 class="typed-text-output d-inline">Web Developer</h2><span class="typed-cursor d-none typed-cursor--blink">|</span>
                     <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>

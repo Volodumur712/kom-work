@@ -1,5 +1,7 @@
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php'); 
+// старт сесії 
+session_start();
 ?>
 
 <!DOCTYPE html>
