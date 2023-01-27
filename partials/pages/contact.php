@@ -2,6 +2,7 @@
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php'); 
 require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
+// $sql = "SELECT * FROM developers";
 ?>
 
 <section class="contact">
@@ -26,46 +27,66 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
                     </div>
 
                     <div class="col-md-2">
-                        <<h1><input type = "submit" name = "kat" value = "Катя"></h1>
+                        <h1><input type = "submit" name = "kat" value = "Катя"></h1>
                     </div>
                     <form>
                 </div>
             </div>
+            
             <div class="contact-us">
                 <div class="contact-text">
                     <div class="nashi-contacty">
                         <?php
-
-                         if($_POST['vova']){
-                         $sql = "SELECT * FROM developers WHERE `id` = 1";
-                         };
-                         if($_POST['vas']){
-                         $sql = "SELECT * FROM developers WHERE `id` = 2";
-                         };
-                         if($_POST['kat']){
-                         $sql = "SELECT * FROM developers WHERE `id` = 3";
-                         };
-                        
+                        if(empty($_POST)) {
+                            echo "";
+                            } else {
+                            if($_POST['vova']){
+                                $sql = "SELECT * FROM developers WHERE `id` = 1";
+                                };
+                            if($_POST['vas']){
+                                $sql = "SELECT * FROM developers WHERE `id` = 2";
+                                };
+                            if($_POST['kat']){
+                                $sql = "SELECT * FROM developers WHERE `id` = 3";
+                                };
+                            }
+                        if(empty($_POST)) {
+                            echo "";
+                            } else {
                         $result = $conn->query($sql);
                         $row = $result->fetch_assoc();
+                            }
                         ?>
                         <p>My office:</p>
-                        <h3><?php echo $row['d_adres']; ?></h3>
+                        <h3><?php 
+                        if(empty($_POST)) { ?>
+                            <h4 class="text-danger"> <?php echo "select developers to open contacts"; ?></h4>
+                            <?php } else {
+                                echo $row['d_adres']; 
+                            } ?></h3>
                         <hr>
                         
                         <p>Call me:</p>
-                        <h3><?php echo $row['d_tel']; ?></h3>
+                        <h3><?php if(empty($_POST)) { ?>
+                            <h4 class="text-danger"> <?php echo "виберіть розробника щоб відкрити контакти"; ?> </h4>
+                            <?php } else {
+                                echo $row['d_tel']; 
+                            }?></h3>
                         <hr>
 
                         <p>Mail me:</p>
-                        <h3><?php echo $row['d_mail']; ?></h3>
+                        <h3><?php if(empty($_POST)) { ?>
+                            <h4 class="text-danger"> <?php echo "выберите разработчика чтобы открыть контакты"; ?> </h4>
+                            <?php } else {
+                                echo $row['d_mail']; 
+                            } ?></h3>
                         <hr>
                         
                         <p>Follow me:</p>
                     </div>
                 <div class="follow-b">
-                    <button id="btn-inst"><a href="<?php echo $row['insta']; ?>" target="_blank"><img src="./assets/image/inst.svg"></a></button>
-                    <button id="btn-tg"><a href="<?php echo $row['telega']; ?>" target="_blank"><img src="./assets/image/telegram.svg"></a></button>
+                    <button id="btn-inst"> <a href="<?php echo $row['insta']; ?>" target="_blank"><img src="./assets/image/inst.svg"></a></button>
+                    <button id="btn-tg">  <a href="<?php echo $row['telega']; ?>" target="_blank"><img src="./assets/image/telegram.svg"></a></button>
                     <button id="btn-whts"><a href="<?php echo $row['Linced']; ?>" target="_blank"><img src="./assets/image/whatsapp.svg"></a></button>
                     <button id="btn-fb"><a href="<?php echo $row['facebook']; ?>" target="_blank"><img src="./assets/image/facebook.svg"></a></button>
                 </div>
@@ -86,7 +107,6 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
                                     <input type="text" class="form-contr" id="subject" placeholder="Subject">
                             </div>
                             <div class="feedback-long">
-
                                      <textarea class="form-contr" placeholder="Leave a message here" id="message" style="height: 50px"></textarea>                                    
                             </div>
                             <div class="feedback-long">
