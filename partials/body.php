@@ -14,8 +14,8 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/pages/head_menu.php');
      case 'projects.php':
      $page = 'projects';
      break;
-     case 'scills.php':
-     $page = 'Scills';
+     case 'scils.php':
+     $page = 'scils';
      break;
      case 'testimonial.php':
      $page = 'testimonial';
