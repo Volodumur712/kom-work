@@ -19,9 +19,9 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
 
 			<div class="row g-4 portfolio-container wow" data-wow-delay="0.1s" style="position: relative; height: 500px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
                 <div class="col-lg-4 col-md-6 portfolio-item first" style="position: absolute; left: 10px; top: 0px;">
-                    <div class="portfolio-img rounded overflow-hidden">
+                    <div class="portfolio-img rounded overflow-hidden" style="position: relative;">
                         <img class="img-fluid" src="/assets/image/rulet.jpg" alt="">
-                        <div class="portfolio-btn">
+                        <div class="portfolio-btn"style="position: absolute;">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="/assets/image/rulet.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://vermillion-banoffee-78e7af.netlify.app" target="_blank"><i class="fa fa-link"></i></a>
                         </div>

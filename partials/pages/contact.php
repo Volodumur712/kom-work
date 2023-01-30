@@ -62,7 +62,10 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
                         if(empty($_POST)) { ?>
                             <h4 class="text-danger"> <?php echo "select developers to open contacts"; ?></h4>
                             <?php } else {
-                                echo $row['d_adres']; 
+                                echo $row['d_adres']; ?>
+                                 <!-- <button> <?php //echo $row['koor']; ?> </button> -->
+                                 <!-- <button id="btn-inst"> <a href="<?php //echo $row['koor']; ?>" target="_blank"><img src="./assets/image/inst.svg"></a></button> -->
+                                  <?php
                             } ?></h3>
                         <hr>
                         

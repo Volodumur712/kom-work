@@ -49,7 +49,7 @@ body {
 /*KATYA ==============================================*/
 html {
     /*overflow-x: hidden; убираем прокрутку*/
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 body {
     margin: 0;
@@ -541,6 +541,9 @@ color: #12141D;
 }
  /*KATYA ABOUT END===*/
 
+
+
+
 /*SKILLS VOVA++++*/
 
 .scills .row {
@@ -551,6 +554,20 @@ color: #12141D;
     margin-top: 100px;
 }
 /*SKILLS VOVA++++*/
+
+
+
+/*PRODJECT VOVA++++*/
+.portfolio-img {
+    position: relative;
+}
+
+.portfolio-btn {
+    position: absolute;
+}
+/*PRODJECT VOVA++++*/
+
+
 
 
 /* KATYA testimonial START =====*/
