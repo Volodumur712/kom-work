@@ -11,9 +11,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
         <div class="col-md-4">
             <h1>My Scills</h1>
         </div>
-        <div class="col-md-4">
-            <a href="/partials/pages/add-scills.php"><h3>ADD Scills</h3></a>
-        </div>
+        
     </div>
     <?php
     $sql = "SELECT * FROM scills";
