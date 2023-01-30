@@ -11,6 +11,15 @@ body {
 .menu-main li {
     display: inline-block;
 }
+
+
+/*PROJECTS (KATYA)++++++++*/
+.projects .img-fluid {
+    max-width: 77%;
+}
+/*PROJECTS (KATYA)++++++++*/
+
+
 /*MENU (KATYA)++++++++*/
 .menu {
     width: 100%;
@@ -55,7 +64,7 @@ body {
     margin: 0;
     background: #ffffff;
     /* overflow-x: hidden; */
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans",sans-serif !important;
  
 }
 
@@ -256,7 +265,7 @@ color: #12141D;
 /*KATYA CONTACTS START===*/
 
 .contact {
-    margin-top: 20px;
+    margin-top: -20px;
     width: 100%;
 
 }
@@ -268,15 +277,35 @@ color: #12141D;
 
 .contact-top {
     text-align: center;
+    margin-top: 60px;
 
 }
 .contact-top h1 {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 700;
     margin-top: 70px;
     margin-bottom: 20px;
 }
 
+.contact-top input {
+    font-weight: 500;
+    transition: .5s;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding: 1px 15px;
+    border: 3px solid #6244C5;
+    background: #6244C5;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.1;
+}
+.contact-top input:hover {
+    background: #FFC448;
+    border: 5px solid #FFC448;
+
+}
 .contact-us {
     display: flex;
     justify-content: space-between;
@@ -344,8 +373,13 @@ color: #12141D;
     border-radius: 10px;
     transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
 }
-
-.btn-form {
+.feedback-form a {
+    color: #FFC448;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.feedback-form .btn-form {
     font-weight: 500;
     transition: .5s;
     color: #FFFFFF;
@@ -590,13 +624,14 @@ color: #12141D;
 }
 .testimonial-top {
   text-align: center;  
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
 }
 .slidic {
-    max-width: 70%;
+    max-width: 80%;
     margin-right: auto !important;
-    margin-left: auto !important;  
+    margin-left: auto !important; 
+    margin-bottom: 50px; 
 }
 .centr-testimonial {
    
@@ -605,7 +640,7 @@ color: #12141D;
 
 .centr-testimonial img {
     border-radius: 100%;
-    border: 3px solid #FFC448;
+    border: 5px solid #FFC448;
 }
 
 
@@ -646,7 +681,24 @@ color: #12141D;
     margin-top: 0;
     margin-bottom: 1.5rem;
 }
+
+
+.owl-carousel .owl-item .centr-testimonial img {
+    width: 25%;
+    height: auto;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+
+.owl-carousel {
+    max-width: 90%;
+    margin-right: auto !important;
+    margin-left: auto !important; 
+    margin-bottom: 50px; 
+}
 /* KATYA testimonial END =====*/
+
 
 /* Vasy */
 
@@ -709,3 +761,31 @@ color: #12141D;
     position: absolute;
 }
 
+=======
+
+
+/*KATYA FOOTER START*/
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bg {
+    background: #FFC448;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    width: 100%;
+    height: auto;
+    margin-bottom: -1px;
+}
+ 
+
+.foot {
+ position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+   
