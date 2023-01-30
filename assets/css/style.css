@@ -22,13 +22,11 @@ body {
 .menu-main {
     justify-content: space-around;
     display: flex;
-
 }
 
 
 .menu-main li {
-     font-size: 26px;
-     
+     font-size: 26px; 
 }
 
 
