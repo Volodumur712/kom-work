@@ -23,7 +23,7 @@ if(!empty($_POST)) {
   }
 ?>
 
-<form method="post">
+<!-- <form method="post">
     <p>
         Login: <br/>
         <input type="text" name="login">
@@ -42,4 +42,22 @@ if(!empty($_POST)) {
     <p>
         <input type="submit" name="submit" value="registr">
     </p>
-</form>
+</form> -->
+
+<div id="bg-register">
+        <div class="form-login"  method="post">
+            <h1>Register</h1>
+            <div class="input-form">
+                <input type="text" name="login" placeholder="login">
+            </div>
+            <div class="input-form">
+                <input type="text" name="email" placeholder="e-mail">
+            </div>
+            <div class="input-form">
+                <input type="password" name="password" placeholder="password">
+            </div>
+            <div class="input-form">
+                <input type="submit" name="submit" value="Enter">
+            </div>
+        </div>
+    </div>
