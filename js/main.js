@@ -53,4 +53,65 @@ $('.count').each(function() {
         }
     });
 });
- 
+
+ /*//slider
+$(document).ready(function(){
+$('.owl-carousel').owlCarousel();
+        autoplay: true,
+        smartSpeed: 1000,
+        items: 1,
+        
+        loop: true,
+}); 
+
+ // Testimonials carousel
+    $(document).ready(function(){
+    const slider = $('#testimonial-carousel').owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        items: 1,
+        dots: true,
+        loop: true,
+    }); */
+
+
+
+$(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+    // автозапуск
+    autoplay: true,
+    dots: true,
+
+    // время задержки
+    autoplayTimeout: 4000,
+    smartSpeed: 2000, 
+    // зацикливаем
+            loop: true,
+    // адаптивность
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+              }
+    }
+        });
+    }); 
+
+/*//Testimonials carousel
+    $(document).ready(function(){
+    const slider = $('#testimonial-carousel').owlCarousel({
+         // автозапуск
+         autoPlay: true,
+        // зацикливаем
+            loop: true,
+        smartSpeed: 1000,
+        items: 1,
+        dots: true,
+    }); 
+});*/
+   
