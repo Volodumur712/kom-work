@@ -23,7 +23,6 @@ if(!empty($_POST)) {
   }
 ?>
 
-
 <div id="bg-register">
 <a href="/?p=home.php"><h3>Back Home</h3></a>
         <div class="form-login">
@@ -52,18 +51,3 @@ if(!empty($_POST)) {
 
         </div>
 </div>
-
-<!-- 
-            <div class="input-form">
-                <input type="text" name="login" placeholder="login">
-            </div>
-            <div class="input-form">
-                <input type="text" name="email" placeholder="e-mail">
-            </div>
-            <div class="input-form">
-                <input type="password" name="password" placeholder="password">
-            </div>
-            <div class="input-form">
-                <input type="submit" name="submit" value="Enter">
-            </div>
-        -->

@@ -1,7 +1,9 @@
 
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php');
+
 require($_SERVER['DOCUMENT_ROOT'] . '/partials/header.php');
+
 
 if(!empty($_POST)) {
     $imja = $_POST['login'];
@@ -46,6 +48,7 @@ if(!empty($_POST)) {
 </form> -->
 
 <div id="bg-login">
+
 <a href="/?p=home.php"><h3>Back to Home</h3></a>
         <div class="form-login">
             <h1>Login</h1>
@@ -64,3 +67,4 @@ if(!empty($_POST)) {
                 </form>
         </div>
 </div>
+
