@@ -1,7 +1,9 @@
 
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/config/bd.php');
-require($_SERVER['DOCUMENT_ROOT'] . '/partials/link.php');
+
+require($_SERVER['DOCUMENT_ROOT'] . '/partials/header.php');
+
 
 if(!empty($_POST)) {
     $imja = $_POST['login'];
@@ -46,16 +48,23 @@ if(!empty($_POST)) {
 </form> -->
 
 <div id="bg-login">
-        <div class="form-login"  method="post">
+
+<a href="/?p=home.php"><h3>Back to Home</h3></a>
+        <div class="form-login">
             <h1>Login</h1>
-            <div class="input-form">
-                <input type="text" name="login" placeholder="e-mail">
-            </div>
-            <div class="input-form">
-                <input type="password" name="password" placeholder="password">
-            </div>
-            <div class="input-form">
-                <input type="submit" name="submit" value="Enter">
-            </div>
+                <form method="post">
+                    <div class="input-form">
+                        <input type="text" name="login" placeholder="Name">
+                    </div>
+
+                    <div class="input-form">
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+
+                    <div class="input-form">
+                        <input type="submit" name="submit" value="Login">
+                    </div>
+                </form>
         </div>
-    </div>
+</div>
+

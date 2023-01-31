@@ -23,41 +23,31 @@ if(!empty($_POST)) {
   }
 ?>
 
-<!-- <form method="post">
-    <p>
-        Login: <br/>
-        <input type="text" name="login">
-    </p>
-
-    <p>
-        Email: <br/>
-        <input type="text" name="email">
-    </p>
-
-    <p>
-        Password: <br/>
-        <input type="password" name="password">
-    </p>
-
-    <p>
-        <input type="submit" name="submit" value="registr">
-    </p>
-</form> -->
-
 <div id="bg-register">
-        <div class="form-login"  method="post">
+<a href="/?p=home.php"><h3>Back Home</h3></a>
+        <div class="form-login">
             <h1>Register</h1>
-            <div class="input-form">
-                <input type="text" name="login" placeholder="login">
-            </div>
-            <div class="input-form">
-                <input type="text" name="email" placeholder="e-mail">
-            </div>
-            <div class="input-form">
-                <input type="password" name="password" placeholder="password">
-            </div>
-            <div class="input-form">
-                <input type="submit" name="submit" value="Enter">
-            </div>
+
+                <form method="post">
+                    <div class="input-form">
+                        
+                        <input type="text" name="login" placeholder="login">
+                    </div>
+
+                    <div class="input-form">
+                        
+                        <input type="text" name="email" placeholder="e-mail">
+                    </div>
+
+                    <div class="input-form">
+                        
+                        <input type="password" name="password" placeholder="password">
+                    </div>
+
+                    <div class="input-form">
+                        <input type="submit" name="submit" value="Registr">
+                    </div>
+                </form>
+
         </div>
-    </div>
+</div>

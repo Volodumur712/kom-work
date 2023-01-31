@@ -761,11 +761,10 @@ color: #12141D;
     position: absolute;
 }
 
-=======
-
 
 /*KATYA FOOTER START*/
 .footer-text {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
