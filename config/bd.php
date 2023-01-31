@@ -1,13 +1,27 @@
 <?php
- $servername = "sql11.freemysqlhosting.net";
-     $database = "sql11591844";
-     $username = "sql11591844";
-     $password = "rPP8UYAFSx"; 
 
-    // $servername = "localhost";
-    // $database = "sql11591844";
-    // $username = "root";
-    // $password = ""; 
+//  $servername = "sql207.epizy.com";
+//     $database = "epiz_33448594_123";
+//     $username = "epiz_33448594";
+//     $password = "Pcgoy8OclCguS";
+
+
+    // нова
+    // $servername = "sql207.epizy.com";
+    //  $database = "epiz_33448594_123";
+    //  $username = "epiz_33448594";
+    //  $password = "Pcgoy8OclCguS";
+
+    
+    // старт сесії 
+    // session_start();
+
+
+      $servername = "localhost";
+      $database = "124";
+      $username = "root";
+      $password = ""; 
+
     
     // створення зєднання
     $conn = mysqli_connect($servername, $username, $password, $database);
